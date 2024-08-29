@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link href="log.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="login-container">
+        <h2 class="invert">Login Form</h2>
+        <form id="login-form">
+            <label class="invert" for="username">Username</label>
+            <input type="email" id="username" name="username" placeholder="Enter your email" required>
+
+            <label class="invert" for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label class="invert" for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <div class="invert" class="gender-group">
+                <label for="gender">Gender</label>
+                <label><input type="radio" name="gender" value="male" required> Male</label>
+                <label><input type="radio" name="gender" value="female"> Female</label>
+                <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+
+            <label  class="invert" for="rollnumber">Roll Number</label>
+            <input type="number" id="rollnumber" name="rollnumber" placeholder="Enter your roll number" required>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div id="toast-container"></div>
+    <script src="valid.js"></script>
+</body>
+
+</html>
